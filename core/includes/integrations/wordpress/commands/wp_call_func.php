@@ -19,7 +19,7 @@ if ( ! class_exists( 'GPTE_Integrations_wordpress_Commands_wp_call_func' ) ) :
 				),
 				'function_definition' => array( //Necessary to make the AI understand parameter context
 					//'label' => __( 'array $args', 'gpte' ),
-					'label' => __( 'E.g. get_user_by( $field, $value )', 'gpte' ), 
+					'label' => __( 'E.g. wp_insert_post( array $postarr, bool $wp_error = false, bool $fire_after_hooks = true )', 'gpte' ), 
 					'short_description' => __( '(String) The arguments you want to send over within the function call. Use the variable name as the key and the value for the variable value. JSON and serialized data will be converted to its original format. To avoid it, please wrap the value in double quotes.', 'gpte' ),
 				),
 				'function_parameters' => array(
